@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+
+    <link rel="stylesheet" href="labtask 2.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Student Registration Form</h2>
+
+    <form id="studentForm">
+
+        <label>
+            First Name <span class="required">*</span>
+        </label>
+        <input type="text" id="fname">
+
+        <label>
+            Last Name <span class="required">*</span>
+        </label>
+        <input type="text" id="lname">
+
+        <label>
+            Student ID <span class="required">*</span>
+        </label>
+        <input type="text" id="sid" placeholder="22-12345-1">
+
+        <label>
+            Email <span class="required">*</span>
+        </label>
+        <input type="text" id="email" placeholder="example@student.aiub.edu">
+
+        <label>
+            Credit Completed <span class="required">*</span>
+        </label>
+        <input type="number" id="credit">
+
+        <label>
+            Department <span class="required">*</span>
+        </label>
+
+        <select id="department">
+            <option value="">Select Department</option>
+            <option>CSE</option>
+            <option>CS</option>
+            <option>CSSE</option>
+            <option>SE</option>
+            <option>EEE</option>
+            <option>BBA</option>
+        </select>
+
+        <div class="btn">
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+
+</div>
+
+<h2 align="center">Registered Student List</h2>
+
+<table id="studentTable">
+
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Student ID</th>
+        <th>Email</th>
+        <th>Credit</th>
+        <th>Department</th>
+    </tr>
+
+</table>
+
+<script src="labtask 2.js"></script>
+
+</body>
+</html>
